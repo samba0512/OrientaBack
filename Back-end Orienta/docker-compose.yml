@@ -1,0 +1,32 @@
+version: '3.3'
+
+services:
+  mysql-conteneur:
+    image: mysql:5.7
+    container_name: mysql-conteneur
+    environment:
+      - MYSQL_ROOT_PASSWORD=orienta
+      - MYSQL_DATABASE=RestApiOrienta
+      - MYSQL_USER=orienta
+      - MYSQL_PASSWORD=orienta
+  orientaback-docker-container:
+    image: orientaback-docker-container
+    volumes:
+      - myimages:/home/images
+    container_name: orientaback-docker-container
+    ports:
+      - 8080:8080
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    depends_on:
+      - mysql-conteneur
+volumes:
+  myimages:
+    driver: local
+    driver_opts:
+      type: 'none'
+      o: 'bind'
+      device: '/home/admin/images'
+
+
