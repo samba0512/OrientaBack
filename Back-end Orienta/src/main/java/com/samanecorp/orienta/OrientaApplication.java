@@ -22,8 +22,7 @@ public class OrientaApplication implements CommandLineRunner {
 	@Autowired
 	private TypePieceRepository typePieceRepository;
 	@Autowired
-	private NiveauRepository niveauReposi
-	 tory;
+	private NiveauRepository niveauRepository;
 	@Autowired
 	private TypeFormationsRepository typeFormationsRepository;
 //	@Autowired

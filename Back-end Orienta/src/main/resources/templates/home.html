@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Orienta | SN</title>
-	<link rel="icon" href="images/Orienta_Icon.svg">
+	<link rel="icon" th:href="@{/images/Orienta_Icon.svg}">
 
 	<!-- font -->
 	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -41,7 +41,7 @@
 	<!-- navbar -->
 	<nav class="navbar navbar-expand-md navbar-light fixed-top">
 		<div class="container">
-			<a href="index.html" class="navbar-brand"><img src="images/Orienta_Icon.svg" alt=""></a>
+			<a href="index.html" class="navbar-brand"><img  th:src="@{/images/Orienta_Icon.svg}" alt=""></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<i class="icon ion-ios-menu"></i>
 			</button>
@@ -88,7 +88,7 @@
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12">
 					<div class="content-image">
-						<img src="images/On the way-bro.svg" alt="">
+						<img th:src="@{/images/On the way-bro.svg}" alt="">
 					</div>
 				</div>
 			</div>
@@ -150,7 +150,7 @@
 			<div class="row">
 				<div class="col-sm-12 col-md-6 col-xs-12">
 					<div class="content-image">
-						<img src="images/Presentation-amico.svg" alt="">
+						<img th:src="@{/images/Presentation-amico.svg}" alt="">
 					</div>
 				</div>
 				<div class="col-sm-12 col-md-6 col-xs-12">
@@ -420,7 +420,7 @@
 						<div class="col-md-6 col-sm-12">
 							<a href="">
 								<div class="content">
-									<img src="images/news1.jpg" alt="news-image">
+									<img th:src="@{/images/news1.jpg}" alt="news-image">
 									<h4>Graphic Design and Photography Workshop</h4>
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque</p>
 								</div>
@@ -429,7 +429,7 @@
 						<div class="col-md-6 col-sm-12">
 							<a href="">
 								<div class="content">
-									<img src="images/news2.jpg" alt="news-image">
+									<img th:src="@{/images/news2.jpg}" alt="news-image">
 									<h4>10 Best Website Design for Inspiration</h4>
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque</p>
 								</div>
@@ -506,7 +506,7 @@
 			<div class="row">
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<div class="content">
-						<div class="brand"><img src="images/Orienta_Icon.svg" alt=""></div>
+						<div class="brand"><img th:src="@{/images//Orienta_Icon.svg}" alt=""></div>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, accusamus.</p>
 					</div>
 				</div>
